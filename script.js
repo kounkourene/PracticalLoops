@@ -1,4 +1,4 @@
-//Fizz Buzz
+//Part 1: Fizz Buzz
 for (let i = 1; i <= 100; i++) {
   if (i % 3 === 0) {
     console.log("Fizz");
@@ -11,7 +11,8 @@ for (let i = 1; i <= 100; i++) {
   }
 }
 
-//Prime Time
+//Part 2: Prime Time
+
 // let primeNumbers = "";
 // for (let i = 1; i <= 100; i++) {
 //   let counter = 0;
@@ -40,3 +41,18 @@ for (let i = 2; i <= 100; i++) {
     console.log(i);
   }
 }
+
+//Part 3: Feeling Loopy
+
+const firstString =
+  "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
+const removeChar = [",", "\n"];
+
+let emptyString = "";
+
+for (let char of firstString) {
+  if (removeChar.indexOf(char) === -1) {
+    emptyString += char;
+  }
+}
+console.log(emptyString);
